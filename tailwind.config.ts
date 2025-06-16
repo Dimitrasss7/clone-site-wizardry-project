@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'roboto': ['Roboto Ruble', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -84,11 +88,87 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'slide-up': {
+					'0%': {
+						transform: 'translateY(var(--animationSlideDistance))',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					}
+				},
+				'slide-down': {
+					'0%': {
+						transform: 'translateY(calc(-1 * var(--animationSlideDistance)))',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					}
+				},
+				'slide-left': {
+					'0%': {
+						transform: 'translateX(var(--animationSlideDistance))',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateX(0)',
+						opacity: '1'
+					}
+				},
+				'slide-right': {
+					'0%': {
+						transform: 'translateX(calc(-1 * var(--animationSlideDistance)))',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateX(0)',
+						opacity: '1'
+					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'fade-out': {
+					'0%': { opacity: '1' },
+					'100%': { opacity: '0' }
+				},
+				'zoom-in': {
+					'0%': {
+						transform: 'scale(0.8)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
+				},
+				'zoom-out': {
+					'0%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'scale(1.15)',
+						opacity: '0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'slide-up': 'slide-up 0.8s cubic-bezier(0.21, 0.67, 0.58, 1) both',
+				'slide-down': 'slide-down 0.8s cubic-bezier(0.21, 0.67, 0.58, 1) both',
+				'slide-left': 'slide-left 0.8s cubic-bezier(0.21, 0.67, 0.58, 1) both',
+				'slide-right': 'slide-right 0.8s cubic-bezier(0.21, 0.67, 0.58, 1) both',
+				'fade-in': 'fade-in 0.8s cubic-bezier(0.21, 0.67, 0.58, 1) both',
+				'fade-out': 'fade-out 0.8s cubic-bezier(0.21, 0.67, 0.58, 1) both',
+				'zoom-in': 'zoom-in 0.8s cubic-bezier(0.21, 0.67, 0.58, 1) both',
+				'zoom-out': 'zoom-out 0.8s cubic-bezier(0.21, 0.67, 0.58, 1) both'
 			}
 		}
 	},
