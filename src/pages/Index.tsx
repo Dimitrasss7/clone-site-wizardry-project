@@ -93,11 +93,7 @@ const Index = () => {
           <header className="pt-8 px-6 text-center animate-slide-down">
             <div className="flex items-center justify-center gap-3 mb-2">
               <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/92e9be99-89b3-4bff-a719-5ee5756f425f.png" 
-                  alt="Logo" 
-                  className="w-10 h-10 object-contain"
-                />
+                <img src="/lovable-uploads/92e9be99-89b3-4bff-a719-5ee5756f425f.png" alt="Logo" className="w-10 h-10 object-contain" />
               </div>
               <h1 className="text-white font-medium tracking-wider text-5xl">ARBAT NT</h1>
             </div>
@@ -106,10 +102,10 @@ const Index = () => {
           {/* Main Content */}
           <div className="flex-1 flex items-center justify-center px-6">
             <div className="text-center max-w-4xl animate-slide-up">
-              <h2 className="text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <h2 className="text-white text-5xl font-bold mb-6 leading-tight md:text-8xl mx-[6px]">
                 Начни свой карьерный путь с нами!
               </h2>
-              <p className="text-white/90 text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed font-light">
+              <p className="text-white/90 text-lg mb-8 max-w-3xl leading-relaxed font-normal md:text-xl my-[40px] py-0 px-0 mx-[67px]">
                 Гибкие условия, стабильная зарплата и поддержка на каждом шагу – твой шанс изменить жизнь<br />
                 Мы 8 лет помогаем людям обрести стабильность через работу с надёжными работодателями.
               </p>
