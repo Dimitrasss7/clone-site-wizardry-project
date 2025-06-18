@@ -92,10 +92,12 @@ const Index = () => {
           {/* Header */}
           <header className="pt-8 px-6 text-center animate-slide-down">
             <div className="flex items-center justify-center gap-3 mb-2">
-              <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded flex items-center justify-center">
-                <div className="w-6 h-6 bg-white rounded-sm flex items-center justify-center">
-                  <div className="text-xs font-bold text-gray-800">NT</div>
-                </div>
+              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/92e9be99-89b3-4bff-a719-5ee5756f425f.png" 
+                  alt="Logo" 
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <h1 className="text-white font-medium tracking-wider text-5xl">ARBAT NT</h1>
             </div>
