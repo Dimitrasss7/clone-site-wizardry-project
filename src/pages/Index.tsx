@@ -82,7 +82,7 @@ const Index = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000"
         style={{
-          backgroundImage: `url('/lovable-uploads/e0d2f1ee-7be7-4e55-ac32-d5ebacaaa9a0.png')`,
+          backgroundImage: `url('https://sun9-5.userapi.com/c857232/v857232880/1384a0/Pgv8UeB8KJ4.jpg')`,
           transform: currentStep !== 'home' ? 'scale(1.05)' : 'scale(1)'
         }}
       >
@@ -137,7 +137,15 @@ const Index = () => {
         <div className={`fixed inset-0 z-50 flex items-center justify-center p-4 ${
           isAnimating ? 'm_modal animation-backwards' : 'm_modal animation-forwards'
         }`}>
-          <div className="modal-data absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={handleClose}></div>
+          <div 
+            className="modal-data absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('https://i.ytimg.com/vi/n5EsSmHHDZg/maxresdefault.jpg')`
+            }}
+            onClick={handleClose}
+          >
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+          </div>
           
           <div className="modal-content relative bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl">
             {/* Progress Bar */}
