@@ -102,7 +102,7 @@ const Index = () => {
           {/* Main Content */}
           <div className="flex-1 flex items-center justify-center px-6">
             <div className="text-center max-w-4xl animate-slide-up">
-              <h2 className="text-white text-5xl font-bold mb-6 leading-tight md:text-8xl mx-[6px]">
+              <h2 className="text-white text-5xl font-bold mb-6 leading-tight md:text-8xl mx-0">
                 Начни свой карьерный путь с нами!
               </h2>
               <p className="text-white/90 text-lg mb-8 max-w-3xl leading-relaxed font-normal md:text-xl my-[40px] py-0 px-0 mx-[67px]">
